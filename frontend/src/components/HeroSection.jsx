@@ -15,26 +15,15 @@ const HeroSection = () => {
       data-testid="hero-section"
       className="relative h-screen w-full overflow-hidden"
     >
-      {/* Background Video/Image */}
+      {/* Background Image with Overlay */}
       <div className="absolute inset-0">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="video-bg"
-          poster="https://images.unsplash.com/photo-1738851952441-2a7d17487545?crop=entropy&cs=srgb&fm=jpg&q=85"
-        >
-          <source src="https://player.vimeo.com/external/370467553.sd.mp4?s=8b9f4e7d2c3b04a6f8e5a0b9c1d2e3f4g5h6i7j8&profile_id=164&oauth2_token_id=57447761" type="video/mp4" />
-        </video>
-        {/* Fallback image */}
         <img 
           src="https://images.unsplash.com/photo-1738851952441-2a7d17487545?crop=entropy&cs=srgb&fm=jpg&q=85"
           alt="Cinematic wedding moment"
-          className="video-bg"
+          className="absolute inset-0 w-full h-full object-cover"
         />
         {/* Overlay gradient */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-[#F9F8F6]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-[#F9F8F6]" />
       </div>
 
       {/* Story Progress Bars */}
