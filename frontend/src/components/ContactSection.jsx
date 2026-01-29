@@ -153,7 +153,11 @@ const ContactSection = () => {
         animate={isInView ? { opacity: 1 } : {}}
         transition={{ duration: 0.8, delay: 0.7 }}
       >
-        <p className="font-script text-[#D4AF37] text-xl mb-2">Keepsake Studio</p>
+        <img 
+          src="https://customer-assets.emergentagent.com/job_story-studio-8/artifacts/bfv6iveu_IMG_9511.PNG"
+          alt="Keepsake Studio Logo"
+          className="w-24 h-auto mx-auto mb-4 brightness-0 invert opacity-90"
+        />
         <p className="text-white/50 text-sm">
           Modern Event & Lifestyle Content Creation
         </p>
