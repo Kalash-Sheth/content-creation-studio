@@ -3,6 +3,7 @@ import Lenis from "@studio-freight/lenis";
 import "@/App.css";
 
 // Import sections
+import Navigation from "./components/Navigation";
 import HeroSection from "./components/HeroSection";
 import AboutSection from "./components/AboutSection";
 import ServicesSection from "./components/ServicesSection";
@@ -45,11 +46,14 @@ function App() {
       {/* Grain overlay */}
       <div className="grain-overlay" aria-hidden="true" />
 
+      {/* Navigation */}
+      <Navigation />
+
       {/* Main content */}
       <main>
         <HeroSection />
-        <AboutSection />
-        <ServicesSection />
+        <div id="about"><AboutSection /></div>
+        <div id="services"><ServicesSection /></div>
         <PackagesSection />
         <EditingSection />
         <DeliverySection />
