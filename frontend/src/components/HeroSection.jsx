@@ -80,14 +80,14 @@ const HeroSection = () => {
 
       {/* Hero Content */}
       <div className="relative z-30 h-full flex flex-col items-center justify-center px-6 text-center">
-        <motion.p
-          className="font-script text-[#D4AF37] text-xl md:text-2xl mb-4"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3, duration: 0.8 }}
-        >
-          Keepsake Studio
-        </motion.p>
+        <motion.img
+          src="https://customer-assets.emergentagent.com/job_story-studio-8/artifacts/bfv6iveu_IMG_9511.PNG"
+          alt="Keepsake Studio Logo"
+          className="w-32 md:w-40 h-auto mb-6"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.2, duration: 0.8 }}
+        />
         
         <motion.h1
           className="font-heading text-white text-4xl md:text-6xl lg:text-7xl font-medium leading-tight max-w-5xl"
