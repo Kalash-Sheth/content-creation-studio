@@ -79,7 +79,7 @@ const HeroSection = () => {
       </motion.div>
 
       {/* Hero Content */}
-      <div className="relative z-10 h-full flex flex-col items-center justify-center px-6 text-center">
+      <div className="relative z-30 h-full flex flex-col items-center justify-center px-6 text-center">
         <motion.p
           className="font-script text-[#D4AF37] text-xl md:text-2xl mb-4"
           initial={{ opacity: 0, y: 20 }}
