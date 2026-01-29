@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import logo from "../Assets/Logo.png";
+import logo from "../assets/logo.png";
 
 
 const Navigation = () => {

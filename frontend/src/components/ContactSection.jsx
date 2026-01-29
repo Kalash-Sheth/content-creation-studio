@@ -1,7 +1,7 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { Instagram, Mail, Send, Heart } from 'lucide-react';
-import logo from "../Assets/Logo.png"
+import logo from "../assets/logo.png"
 
 const ContactSection = () => {
   const ref = useRef(null);
