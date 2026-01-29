@@ -44,7 +44,7 @@ const Navigation = () => {
               <img 
                 src="https://customer-assets.emergentagent.com/job_story-studio-8/artifacts/bfv6iveu_IMG_9511.PNG"
                 alt="Keepsake Studio"
-                className={`h-12 md:h-14 w-auto transition-all duration-300 ${isScrolled ? '' : 'brightness-0 invert'}`}
+                className={`h-12 md:h-14 w-auto transition-all duration-300 ${isScrolled ? '' : 'drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]'}`}
               />
             </motion.a>
 
