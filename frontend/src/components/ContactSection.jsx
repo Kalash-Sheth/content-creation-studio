@@ -154,9 +154,9 @@ const ContactSection = () => {
         transition={{ duration: 0.8, delay: 0.7 }}
       >
         <img 
-          src="https://customer-assets.emergentagent.com/job_story-studio-8/artifacts/bfv6iveu_IMG_9511.PNG"
+          src="https://customer-assets.emergentagent.com/job_story-studio-8/artifacts/0bt2jnqz_IMG_9511-removebg-preview.png"
           alt="Keepsake Studio Logo"
-          className="w-24 h-auto mx-auto mb-4 brightness-0 invert opacity-90"
+          className="w-28 h-auto mx-auto mb-4 opacity-90"
         />
         <p className="text-white/50 text-sm">
           Modern Event & Lifestyle Content Creation

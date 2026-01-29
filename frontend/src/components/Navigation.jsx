@@ -42,9 +42,9 @@ const Navigation = () => {
               data-testid="nav-logo"
             >
               <img 
-                src="https://customer-assets.emergentagent.com/job_story-studio-8/artifacts/bfv6iveu_IMG_9511.PNG"
+                src="https://customer-assets.emergentagent.com/job_story-studio-8/artifacts/0bt2jnqz_IMG_9511-removebg-preview.png"
                 alt="Keepsake Studio"
-                className={`h-12 md:h-14 w-auto transition-all duration-300 ${isScrolled ? '' : 'drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]'}`}
+                className="h-14 md:h-16 w-auto transition-all duration-300"
               />
             </motion.a>
 
