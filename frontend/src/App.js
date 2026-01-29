@@ -1,52 +1,63 @@
 import { useEffect } from "react";
+import Lenis from "@studio-freight/lenis";
 import "@/App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import axios from "axios";
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
+// Import sections
+import HeroSection from "./components/HeroSection";
+import AboutSection from "./components/AboutSection";
+import ServicesSection from "./components/ServicesSection";
+import PackagesSection from "./components/PackagesSection";
+import EditingSection from "./components/EditingSection";
+import DeliverySection from "./components/DeliverySection";
+import EquipmentSection from "./components/EquipmentSection";
+import FAQSection from "./components/FAQSection";
+import InstagramSection from "./components/InstagramSection";
+import ContactSection from "./components/ContactSection";
 
-const Home = () => {
-  const helloWorldApi = async () => {
-    try {
-      const response = await axios.get(`${API}/`);
-      console.log(response.data.message);
-    } catch (e) {
-      console.error(e, `errored out requesting / api`);
-    }
-  };
-
+function App() {
   useEffect(() => {
-    helloWorldApi();
+    // Initialize Lenis smooth scrolling
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      orientation: 'vertical',
+      gestureOrientation: 'vertical',
+      smoothWheel: true,
+      wheelMultiplier: 1,
+      touchMultiplier: 2,
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+    // Cleanup
+    return () => {
+      lenis.destroy();
+    };
   }, []);
 
   return (
-    <div>
-      <header className="App-header">
-        <a
-          className="App-link"
-          href="https://emergent.sh"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="https://avatars.githubusercontent.com/in/1201222?s=120&u=2686cf91179bbafbc7a71bfbc43004cf9ae1acea&v=4" />
-        </a>
-        <p className="mt-5">Building something incredible ~!</p>
-      </header>
-    </div>
-  );
-};
+    <div className="App" data-testid="keepsake-studio-app">
+      {/* Grain overlay */}
+      <div className="grain-overlay" aria-hidden="true" />
 
-function App() {
-  return (
-    <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />}>
-            <Route index element={<Home />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+      {/* Main content */}
+      <main>
+        <HeroSection />
+        <AboutSection />
+        <ServicesSection />
+        <PackagesSection />
+        <EditingSection />
+        <DeliverySection />
+        <EquipmentSection />
+        <FAQSection />
+        <InstagramSection />
+        <ContactSection />
+      </main>
     </div>
   );
 }
