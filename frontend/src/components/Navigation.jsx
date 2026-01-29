@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import logo from "../Assets/Logo_Rm.png";
+import logo from "../Assets/Logo.png";
 
 
 const Navigation = () => {
@@ -46,7 +46,7 @@ const Navigation = () => {
               <img 
                 src={logo}
                 alt="Keepsake Studio"
-                className="h-14 md:h-24 w-auto transition-all duration-300"
+                className="h-14 md:h-23 w-auto transition-all duration-300"
               />
             </motion.a>
 

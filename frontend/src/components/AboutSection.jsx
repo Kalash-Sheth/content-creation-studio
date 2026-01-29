@@ -129,7 +129,7 @@ const AboutSection = () => {
           transition={{ duration: 0.8, delay: 0.8 }}
         >
           We're not photographers or videographers — we're content-first storytellers 
-          who capture candid moments and turn them into Instagram & TikTok ready keepsakes.
+          who capture candid moments and turn them into Instagram & Other ready keepsakes.
         </motion.p>
       </div>
     </section>

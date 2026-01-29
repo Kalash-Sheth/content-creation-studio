@@ -79,7 +79,7 @@ const EditingSection = () => {
               </p>
               <div className="flex items-center justify-center gap-4 mt-4">
                 <span className="px-3 py-1 bg-white/10 rounded-full text-xs">Instagram Ready</span>
-                <span className="px-3 py-1 bg-white/10 rounded-full text-xs">TikTok Ready</span>
+                <span className="px-3 py-1 bg-white/10 rounded-full text-xs">Others Similar</span>
               </div>
             </div>
           </motion.div>

@@ -1,6 +1,7 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { Instagram, Mail, Send, Heart } from 'lucide-react';
+import logo from "../Assets/Logo.png"
 
 const ContactSection = () => {
   const ref = useRef(null);
@@ -154,7 +155,7 @@ const ContactSection = () => {
         transition={{ duration: 0.8, delay: 0.7 }}
       >
         <img 
-          src="https://customer-assets.emergentagent.com/job_story-studio-8/artifacts/0bt2jnqz_IMG_9511-removebg-preview.png"
+          src={logo}
           alt="Keepsake Studio Logo"
           className="w-28 h-auto mx-auto mb-4 opacity-90"
         />
