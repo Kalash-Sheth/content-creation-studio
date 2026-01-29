@@ -78,8 +78,8 @@ const ServiceCard = ({ service, index }) => {
           <h3 className="font-heading text-xl text-[#4A4036] mb-2">{service.title}</h3>
           <p className="text-[#4A4036]/80 text-center text-sm mb-4">{service.description}</p>
           <div className="flex items-center gap-2 text-[#4A4036] text-xs">
-            <div className="w-2 h-2 rounded-full bg-[#D4AF37]" />
-            <span>Reel Preview Available</span>
+            {/* <div className="w-2 h-2 rounded-full bg-[#D4AF37]" /> */}
+            {/* <span>Reel Preview Available</span> */}
           </div>
         </div>
       </motion.div>

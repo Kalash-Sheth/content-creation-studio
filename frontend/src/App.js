@@ -59,7 +59,7 @@ function App() {
         <DeliverySection />
         <EquipmentSection />
         <FAQSection />
-        <InstagramSection />
+        {/* <InstagramSection /> */}
         <ContactSection />
       </main>
     </div>

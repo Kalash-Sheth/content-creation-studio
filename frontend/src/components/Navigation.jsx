@@ -1,6 +1,8 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import logo from "../Assets/Logo_Rm.png";
+
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -38,13 +40,13 @@ const Navigation = () => {
             <motion.a 
               href="#"
               className="flex items-center"
-              whileHover={{ scale: 1.05 }}
+              whileHover={{ scale: 1.3 }}
               data-testid="nav-logo"
             >
               <img 
-                src="https://customer-assets.emergentagent.com/job_story-studio-8/artifacts/0bt2jnqz_IMG_9511-removebg-preview.png"
+                src={logo}
                 alt="Keepsake Studio"
-                className="h-14 md:h-16 w-auto transition-all duration-300"
+                className="h-14 md:h-24 w-auto transition-all duration-300"
               />
             </motion.a>
 

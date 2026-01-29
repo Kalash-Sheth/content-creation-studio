@@ -27,7 +27,7 @@ const HeroSection = () => {
       </div>
 
       {/* Story Progress Bars */}
-      <div className="absolute top-6 left-6 right-6 flex gap-1 z-20">
+      {/* <div className="absolute top-6 left-6 right-6 flex gap-1 z-20">
         {storyBars.map((bar) => (
           <div 
             key={bar.id}
@@ -43,7 +43,7 @@ const HeroSection = () => {
             )}
           </div>
         ))}
-      </div>
+      </div> */}
 
       {/* Floating Reel Frames */}
       <motion.div
