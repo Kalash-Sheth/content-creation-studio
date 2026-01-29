@@ -1,0 +1,152 @@
+{
+  "identity": {
+    "name": "Keepsake Studio",
+    "tagline": "Capturing Candid, Real, Emotional Moments",
+    "vibe": "Instagram Storytelling + Cinematic Memory Capture + Luxury Lifestyle",
+    "archetype": "Organic & Earthy (Luxury Variant)",
+    "target_audience": "Couples, Event Planners, Lifestyle Brands"
+  },
+  "typography": {
+    "primary_font": "Playfair Display",
+    "secondary_font": "Manrope",
+    "accent_font": "Dancing Script",
+    "usage": {
+      "headings": "Playfair Display, font-serif, tracking-tight, leading-none",
+      "body": "Manrope, font-sans, leading-relaxed, tracking-wide",
+      "accents": "Dancing Script, font-cursive, text-accent"
+    },
+    "scale": {
+      "h1": "text-6xl md:text-8xl font-medium",
+      "h2": "text-4xl md:text-6xl font-normal",
+      "h3": "text-2xl md:text-3xl font-medium",
+      "body": "text-base md:text-lg text-muted-foreground"
+    }
+  },
+  "colors": {
+    "palette": {
+      "background": "#F9F8F6",
+      "foreground": "#4A4036",
+      "primary": "#D4AF37",
+      "secondary": "#E8DCCA",
+      "accent": "#E6C2BF",
+      "muted": "#F2EBE5",
+      "border": "#E6DCD3"
+    },
+    "usage": {
+      "bg_main": "bg-[#F9F8F6]",
+      "text_main": "text-[#4A4036]",
+      "text_muted": "text-[#8C8070]",
+      "accent_gold": "text-[#D4AF37]",
+      "accent_rose": "bg-[#E6C2BF]",
+      "glass_bg": "bg-[#F9F8F6]/80 backdrop-blur-xl border-white/20"
+    },
+    "gradients": {
+      "hero_overlay": "bg-gradient-to-b from-black/30 via-transparent to-[#F9F8F6]",
+      "gold_shimmer": "bg-gradient-to-r from-[#D4AF37] via-[#F2EBE5] to-[#D4AF37]"
+    }
+  },
+  "visual_enhancers": {
+    "textures": {
+      "grain": "url('https://images.unsplash.com/photo-1708379584923-f44da1553304?crop=entropy&cs=srgb&fm=jpg&q=85')",
+      "paper": "url('https://images.unsplash.com/photo-1658573386529-50450f20c563?crop=entropy&cs=srgb&fm=jpg&q=85')"
+    },
+    "shadows": {
+      "soft": "shadow-[0_8px_30px_rgb(0,0,0,0.04)]",
+      "floating": "shadow-[0_20px_50px_rgb(0,0,0,0.08)]",
+      "glow": "shadow-[0_0_30px_rgba(212,175,55,0.3)]"
+    },
+    "border_radius": {
+      "cards": "rounded-none md:rounded-sm",
+      "buttons": "rounded-full",
+      "images": "rounded-sm"
+    }
+  },
+  "layout_strategies": {
+    "grid_system": "Bento Grid (Mode A) for Services, Masonry for Gallery",
+    "spacing": "Generous padding (py-24, py-32). Use negative space to create luxury feel.",
+    "container": "max-w-7xl mx-auto px-6 md:px-12",
+    "mobile": "Vertical stacking, full-width images, horizontal scroll for cards"
+  },
+  "components": {
+    "HeroSection": {
+      "type": "Cinematic Video Background",
+      "elements": [
+        "Full-screen video/image",
+        "Floating 'Reel' frames (vertical video aspect ratio)",
+        "Animated script text overlay",
+        "Scroll-down indicator"
+      ],
+      "assets": {
+        "bg_image": "https://images.unsplash.com/photo-1738851952441-2a7d17487545?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "reel_poster_1": "https://images.unsplash.com/photo-1680349345004-da07f2ed9354?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "reel_poster_2": "https://images.unsplash.com/photo-1766113482209-0723f874e425?crop=entropy&cs=srgb&fm=jpg&q=85"
+      }
+    },
+    "ServicesSection": {
+      "type": "Interactive Flip Cards",
+      "layout": "Grid 3 columns",
+      "interaction": "Hover to flip, revealing details + 'Book' button",
+      "style": "Minimalist front (Icon + Title), Detailed back (Description + Price)"
+    },
+    "GallerySection": {
+      "type": "Instagram Grid Mockup",
+      "layout": "3-column grid, square aspect ratio",
+      "interaction": "Hover to show 'Likes/Comments' overlay",
+      "assets": [
+        "https://images.unsplash.com/photo-1765991736112-947360518547?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "https://images.unsplash.com/photo-1765991736292-183af847fbbf?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "https://images.unsplash.com/photo-1720617550153-7242f81ccbd6?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "https://images.unsplash.com/photo-1611550287705-7ff8b459c8eb?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "https://images.unsplash.com/photo-1630978781617-816e79eaffeb?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "https://images.unsplash.com/photo-1763922739054-2b0cdf39c8c5?crop=entropy&cs=srgb&fm=jpg&q=85"
+      ]
+    },
+    "EquipmentSection": {
+      "type": "Floating Icons/Images",
+      "style": "Clean, museum-like display of gear",
+      "assets": [
+        "https://images.unsplash.com/photo-1712491058340-ec237ec2cb64?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "https://images.unsplash.com/photo-1705091688077-ac75287a1e6f?crop=entropy&cs=srgb&fm=jpg&q=85"
+      ]
+    }
+  },
+  "motion_guidelines": {
+    "library": "framer-motion",
+    "scroll": "lenis (smooth scrolling)",
+    "transitions": {
+      "default": "ease: [0.22, 1, 0.36, 1], duration: 0.8",
+      "hover": "scale: 1.02, duration: 0.3"
+    },
+    "effects": [
+      "Parallax on images",
+      "Staggered text reveal (word by word)",
+      "Slow fade-in for sections"
+    ]
+  },
+  "image_urls": {
+    "hero_bg": "https://images.unsplash.com/photo-1738851952441-2a7d17487545?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "texture_grain": "https://images.unsplash.com/photo-1708379584923-f44da1553304?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "texture_paper": "https://images.unsplash.com/photo-1658573386529-50450f20c563?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "camera_vintage": "https://images.unsplash.com/photo-1763922739054-2b0cdf39c8c5?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "wedding_couple": "https://images.unsplash.com/photo-1720617550153-7242f81ccbd6?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "party_laugh": "https://images.unsplash.com/photo-1766113482209-0723f874e425?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "videographer": "https://images.unsplash.com/photo-1630978781617-816e79eaffeb?crop=entropy&cs=srgb&fm=jpg&q=85"
+  },
+  "instructions_to_main_agent": [
+    "INSTALL 'lenis' for smooth scrolling immediately. Standard scrolling kills the luxury vibe.",
+    "Use 'Playfair Display' for all Headings (H1-H3). Use 'Manrope' for body text.",
+    "Implement the 'Grain' texture as a fixed overlay with low opacity (opacity-5) and pointer-events-none.",
+    "Do NOT use standard Shadcn cards. Create custom 'div' based cards with the specified border radius and shadow.",
+    "Ensure the 'Hero' section video/image covers the full viewport (h-screen).",
+    "Use the 'Rose Gold' (#E6C2BF) sparingly for hover states or small accents, not as a main background.",
+    "The 'Instagram Grid' must be responsive: 1 column on mobile, 3 columns on desktop.",
+    "Add 'data-testid' to all interactive elements."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Avoid generic 'AI slop' designs. No centered text blocks without purpose.",
+    "Use 2-3x more padding than usual. Luxury = Space.",
+    "Micro-animations are mandatory. Nothing should appear without a transition.",
+    "Use the provided image URLs. Do not use placeholders.",
+    "Respect the 'Light Theme' constraint. Dark backgrounds only for specific 'Cinematic' sections."
+  ]
+}
